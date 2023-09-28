@@ -1,0 +1,200 @@
+2022-09-16 00:37:57,857 [INFO] ***** Running task1.py *****
+2022-09-16 00:37:57,857 [INFO] Loading medical_data from C:\Users\user\OneDrive\Documents\Education\Western Govenors University\MS - Data Analytics\Data Cleaning\medical_raw_data.csv
+2022-09-16 00:37:58,245 [INFO] ***** Inspecting variables *****
+2022-09-16 00:37:58,469 [INFO] 
+                Column  Non-Null Count    Dtype                                                                                                                                                                                  First 5 Values
+0            CaseOrder           10000    int32                                                                                                                                                                                 [1, 2, 3, 4, 5]
+1          Customer_id           10000   object                                                                                                                                                   [C412403, Z919181, F995323, A879973, C544523]
+2          Interaction           10000   object  [8cd49b13-f45a-4b47-a2bd-173ffa932c2f, d2450b70-0337-4406-bdbb-bc1037f1734c, a2057123-abf5-4a2c-abad-8ffe33512562, 1dec528d-eb34-4079-adce-0d7a40e82205, 5885f56b-d6da-43a3-8760-83583af94266]
+3                  UID           10000   object                      [3a83ddb66e2ae73798bdf1d705dc0932, 176354c5eef714957d486009feabf195, e19a0fa00aeda885b8a436757e889bc9, cd17d7b6d152cb6f23957346d11c3f07, d2f0425877b10ed6bb381f3e2579424a]
+4                 City           10000   object                                                                                                                                          [Eva, Marianna, Sioux Falls, New Richland, West Point]
+5                State           10000   object                                                                                                                                                                            [AL, FL, SD, MN, VA]
+6               County           10000   object                                                                                                                                              [Morgan, Jackson, Minnehaha, Waseca, King William]
+7                  Zip           10000   object                                                                                                                                                             [35621, 32446, 57110, 56072, 23181]
+8                  Lat           10000  float64                                                                                                                                               [34.3496, 30.84513, 43.54321, 43.89744, 37.59894]
+9                  Lng           10000  float64                                                                                                                                         [-86.72508, -85.22907, -96.63772, -93.51479, -76.88958]
+10          Population           10000    int32                                                                                                                                                                [2951, 11303, 17125, 2162, 5287]
+11                Area           10000   object                                                                                                                                                    [Suburban, Urban, Suburban, Suburban, Rural]
+12            Timezone           10000   object                                                                                                          [America/Chicago, America/Chicago, America/Chicago, America/Chicago, America/New_York]
+13                 Job           10000   object                                                     [Psychologist, sport and exercise, Community development worker, Chief Executive Officer, Early years teacher, Health promotion specialist]
+14            Children            7412  float64                                                                                                                                                                       [1.0, 3.0, 3.0, 0.0, nan]
+15                 Age            7586  float64                                                                                                                                                                  [53.0, 51.0, 53.0, 78.0, 22.0]
+16           Education           10000   object                [Some College, Less than 1 Year, Some College, 1 or More Years, No Degree, Some College, 1 or More Years, No Degree, GED or Alternative Credential, Regular High School Diploma]
+17          Employment           10000   object                                                                                                                                             [Full Time, Full Time, Retired, Retired, Full Time]
+18              Income            7536  float64                                                                                                                                               [86575.93, 46805.99, 14370.14, 39741.49, 1209.56]
+19             Marital           10000   object                                                                                                                                                  [Divorced, Married, Widowed, Married, Widowed]
+20              Gender           10000   object                                                                                                                                                            [Male, Female, Female, Male, Female]
+21             ReAdmis           10000   object                                                                                                                                                                            [No, No, No, No, No]
+22         VitD_levels           10000  float64                                                                                                                                [17.80233049, 18.99463952, 17.4158887, 17.42007928, 16.87052377]
+23          Doc_visits           10000    int32                                                                                                                                                                                 [6, 4, 4, 4, 5]
+24    Full_meals_eaten           10000    int32                                                                                                                                                                                 [0, 2, 1, 1, 0]
+25           VitD_supp           10000    int32                                                                                                                                                                                 [0, 1, 0, 0, 2]
+26          Soft_drink            7533   object                                                                                                                                                                          [nan, No, No, No, Yes]
+27       Initial_admin           10000   object                                                                                          [Emergency Admission, Emergency Admission, Elective Admission, Elective Admission, Elective Admission]
+28           HighBlood           10000   object                                                                                                                                                                         [Yes, Yes, Yes, No, No]
+29              Stroke           10000   object                                                                                                                                                                           [No, No, No, Yes, No]
+30   Complication_risk           10000   object                                                                                                                                                             [Medium, High, Medium, Medium, Low]
+31          Overweight            9018  float64                                                                                                                                                                       [0.0, 1.0, 1.0, 0.0, 0.0]
+32           Arthritis           10000   object                                                                                                                                                                          [Yes, No, No, Yes, No]
+33            Diabetes           10000   object                                                                                                                                                                          [Yes, No, Yes, No, No]
+34      Hyperlipidemia           10000   object                                                                                                                                                                           [No, No, No, No, Yes]
+35            BackPain           10000   object                                                                                                                                                                           [Yes, No, No, No, No]
+36             Anxiety            9016  float64                                                                                                                                                                       [1.0, nan, nan, nan, 0.0]
+37   Allergic_rhinitis           10000   object                                                                                                                                                                          [Yes, No, No, No, Yes]
+38  Reflux_esophagitis           10000   object                                                                                                                                                                          [No, Yes, No, Yes, No]
+39              Asthma           10000   object                                                                                                                                                                          [Yes, No, No, Yes, No]
+40            Services           10000   object                                                                                                                                      [Blood Work, Intravenous, Blood Work, Blood Work, CT Scan]
+41        Initial_days            8944  float64                                                                                                                               [10.58576971, 15.12956221, 4.772177208, 1.714879175, 1.254807203]
+42         TotalCharge           10000  float64                                                                                                                               [3191.048774, 4214.905346, 2177.586768, 2465.118965, 1885.655137]
+43  Additional_charges           10000  float64                                                                                                                               [17939.40342, 17612.99812, 17505.19246, 12993.43735, 3716.525786]
+44               Item1           10000    int32                                                                                                                                                                                 [3, 3, 2, 3, 2]
+45               Item2           10000    int32                                                                                                                                                                                 [3, 4, 4, 5, 1]
+46               Item3           10000    int32                                                                                                                                                                                 [2, 3, 4, 5, 3]
+47               Item4           10000    int32                                                                                                                                                                                 [2, 4, 4, 3, 3]
+48               Item5           10000    int32                                                                                                                                                                                 [4, 4, 3, 4, 5]
+49               Item6           10000    int32                                                                                                                                                                                 [3, 4, 4, 5, 3]
+50               Item7           10000    int32                                                                                                                                                                                 [3, 3, 3, 5, 4]
+51               Item8           10000    int32                                                                                                                                                                                 [4, 3, 3, 5, 3]
+2022-09-16 00:37:58,483 [INFO] ***** Detecting duplicate rows *****
+2022-09-16 00:37:58,613 [INFO] No duplicates found.
+2022-09-16 00:37:58,613 [INFO] ***** Detecting missing values *****
+2022-09-16 00:37:58,638 [INFO] Children missing 2588 (25.88%) values
+2022-09-16 00:37:58,640 [INFO] Age missing 2414 (24.14%) values
+2022-09-16 00:37:58,645 [INFO] Income missing 2464 (24.64%) values
+2022-09-16 00:37:58,657 [INFO] Soft_drink missing 2467 (24.67%) values
+2022-09-16 00:37:58,666 [INFO] Overweight missing 982 (9.82%) values
+2022-09-16 00:37:58,677 [INFO] Anxiety missing 984 (9.84%) values
+2022-09-16 00:37:58,686 [INFO] Initial_days missing 1056 (10.56%) values
+2022-09-16 00:37:58,695 [INFO] Plotting quantitative variables with missing values...
+2022-09-16 00:38:00,729 [INFO] ***** Imputing missing values *****
+2022-09-16 00:38:00,735 [INFO] Imputing Children with the median
+2022-09-16 00:38:00,742 [INFO] Imputing Age with the mean
+2022-09-16 00:38:00,745 [INFO] Imputing Income with the median
+2022-09-16 00:38:00,750 [INFO] Imputing Soft_drink with the mode
+2022-09-16 00:38:00,758 [INFO] Imputing Overweight with the mode
+2022-09-16 00:38:00,762 [INFO] Imputing Anxiety with the mode
+2022-09-16 00:38:00,766 [INFO] Imputing Initial_days with the median
+2022-09-16 00:38:00,771 [INFO] Verifying missing values have been filled...
+2022-09-16 00:38:00,855 [INFO] Verifying distributions pre and post imputation...
+2022-09-16 00:38:03,403 [INFO] Inspecting distributions before outlier detection...
+2022-09-16 00:38:07,140 [INFO] ***** Detecting outliers *****
+2022-09-16 00:38:07,212 [INFO] Lat contains 144 outliers
+2022-09-16 00:38:07,241 [INFO] Lng contains 98 outliers
+2022-09-16 00:38:07,270 [INFO] Population contains 218 outliers
+2022-09-16 00:38:07,302 [INFO] Children contains 303 outliers
+2022-09-16 00:38:07,336 [INFO] Income contains 180 outliers
+2022-09-16 00:38:07,390 [INFO] VitD_levels contains 500 outliers
+2022-09-16 00:38:07,432 [INFO] Full_meals_eaten contains 33 outliers
+2022-09-16 00:38:07,470 [INFO] VitD_supp contains 70 outliers
+2022-09-16 00:38:07,505 [INFO] TotalCharge contains 276 outliers
+2022-09-16 00:38:07,540 [INFO] ***** Investigating Outliers *****
+2022-09-16 00:38:07,592 [INFO] Lat and Lng outliers grouped by State...
+  State        Lat         Lng  Lat_outlier  Lng_outlier
+0    AK  61.879795 -153.809046     0.957143     0.914286
+1    HI  20.859143 -157.006051     1.000000     1.000000
+2    PR  18.267618  -66.381990     1.000000     0.000000
+2022-09-16 00:38:07,639 [INFO] Population outliers...
+     State     City      Area  Population
+3025    TX     Katy     Rural      122814
+9663    TX     Katy     Rural      122814
+5966    TX  Houston  Suburban      107700
+768     CA  Pacoima     Urban      105799
+7687    CA  Pacoima     Urban      105799
+2022-09-16 00:38:07,700 [INFO] Inspecting first two records...
+           Lat       Lng                       Job  Children                            Education        Marital  Gender  Age_imputed  Income_imputed
+3025  29.83556 -95.73813  Computer games developer         2          Regular High School Diploma       Divorced    Male         True            True
+9663  29.83556 -95.73813       Retail merchandiser         0  9th Grade to 12th Grade, No Diploma  Never Married  Female         True            True
+2022-09-16 00:38:07,731 [INFO] Looking at population for other rural Texas residents...
+count      156.000000
+mean     12233.615385
+std      14789.789818
+min          0.000000
+25%        731.250000
+50%       5243.000000
+75%      17920.750000
+max      53357.000000
+2022-09-16 00:38:07,732 [INFO] Checking for other entries with duplicate digits...
+2022-09-16 00:38:07,741 [INFO] 88/218 (40.36697247706422%) values contain duplicate digits
+2022-09-16 00:38:07,764 [INFO] Children outliers...
+               Children
+Marital                
+Married              76
+Divorced             64
+Widowed              57
+Never Married        54
+Separated            52
+2022-09-16 00:38:07,792 [INFO] Income outliers...
+                                                     Income
+Education                                Employment        
+Some College, 1 or More Years, No Degree Full Time       21
+Regular High School Diploma              Full Time       20
+Bachelor's Degree                        Full Time       16
+Associate's Degree                       Full Time       11
+Master's Degree                          Full Time        9
+2022-09-16 00:38:07,832 [INFO] Nutrition outliers...
+                                                                VitD_levels  Full_meals_eaten  VitD_supp
+VitD_levels_outlier Full_meals_eaten_outlier VitD_supp_outlier                                          
+True                True                     False                47.819231          5.000000   0.000000
+                    False                    False                47.022597          0.983707   0.409369
+                                             True                 47.022534          1.000000   3.000000
+False               False                    True                 18.458225          0.890625   3.109375
+                    True                     False                17.480779          5.321429   0.357143
+                                             True                 17.391009          6.000000   3.000000
+2022-09-16 00:38:07,904 [INFO] Comparing...
+TotalCharge outliers...
+count      276.000000
+mean     18862.987055
+std       1052.013576
+min      16053.462880
+25%      18315.537830
+50%      18983.908835
+75%      19607.727452
+max      21524.224210
+Name: TotalCharge, dtype: float64
+to TotalCharge non-outliers
+count     9724.000000
+mean      5523.364684
+std       2605.498644
+min       1256.751699
+25%       3224.649199
+50%       5526.536036
+75%       7525.450166
+max      15969.605660
+Name: TotalCharge, dtype: float64
+2022-09-16 00:38:07,905 [INFO] ***** Handling outliers *****
+2022-09-16 00:38:07,905 [INFO] Excluding records where State = "PR"
+2022-09-16 00:38:07,906 [INFO] Excluding Population outliers
+2022-09-16 00:38:07,906 [INFO] Keeping all other outliers
+2022-09-16 00:38:07,948 [INFO] Reviewing distributions before and after handling outliers...
+2022-09-16 00:38:10,312 [INFO] Saving excluded records to  to ..\output\20220916003757846003\medical_data_excluded.csv
+2022-09-16 00:38:10,382 [INFO] ***** Saving cleaned data to ..\output\20220916003757846003\medical_data_cleaned.csv *****
+2022-09-16 00:38:12,275 [INFO] ***** Principal Component Analysis *****
+2022-09-16 00:38:14,113 [INFO] explained variance ratio...
+[0.14069381 0.23380258 0.31224396 0.38934246 0.44779024 0.49761023
+ 0.5464266  0.59507522 0.64262051 0.68957726 0.73620717 0.7824536
+ 0.81916984 0.8547895  0.88794139 0.91595341 0.94136215 0.96391504
+ 0.98187869 0.99745281 1.        ]
+2022-09-16 00:38:15,130 [INFO] PCA Loadings...
+                         PC1       PC2       PC3       PC4       PC5       PC6       PC7       PC8       PC9      PC10      PC11      PC12      PC13      PC14      PC15      PC16      PC17      PC18      PC19      PC20      PC21
+Lat                 0.009002 -0.022237  0.012455 -0.007182 -0.713765  0.134571 -0.051095  0.023600 -0.040896 -0.049612 -0.022922 -0.046792  0.067005 -0.661280  0.137245 -0.022976  0.016251 -0.005193 -0.013483 -0.003750 -0.000567
+Lng                 0.000604 -0.004714 -0.012178  0.016452  0.268582 -0.594480 -0.409152  0.300475  0.334695 -0.141328  0.059291  0.179118  0.019952 -0.380664  0.055050  0.012852  0.005703 -0.005409  0.009293  0.008984  0.001839
+Population          0.009239  0.024184  0.024878 -0.023988  0.630816  0.269820  0.239344 -0.169302 -0.216773  0.041040 -0.089268 -0.063827  0.078155 -0.597588  0.126499 -0.017752 -0.015072 -0.027542 -0.013445 -0.005591 -0.001634
+Children            0.002471  0.003001  0.018648  0.012274  0.010117  0.278722  0.154726 -0.253219  0.776284 -0.338254 -0.322470  0.095752  0.050336  0.011737  0.002509  0.015328 -0.015665 -0.014356 -0.008605 -0.002426 -0.002413
+Age                 0.000495  0.082818 -0.024988  0.700490  0.008139  0.010823 -0.026477 -0.010601 -0.013195 -0.005959  0.018307 -0.024151 -0.004116  0.006925  0.023013 -0.005405  0.031273 -0.057107 -0.701547 -0.048990 -0.016563
+Income             -0.002536 -0.005022 -0.018969 -0.006477  0.044935  0.219545  0.300637  0.513657  0.399093  0.268037  0.504211 -0.322555 -0.050632 -0.054227 -0.006743 -0.006953  0.007959 -0.004215 -0.006598 -0.002723 -0.001118
+VitD_levels        -0.009541  0.537333  0.052628 -0.050839 -0.057120 -0.273140  0.273098  0.158788  0.001061  0.097446 -0.402796 -0.243576 -0.008503 -0.004816 -0.007764 -0.004425 -0.008127  0.010174 -0.024700  0.009711  0.544099
+Doc_visits          0.007165 -0.004314 -0.008107  0.012112  0.013236  0.155997  0.275170  0.564758 -0.263859 -0.632606 -0.054881  0.319731 -0.022158  0.062200  0.018650 -0.024366  0.007808 -0.010292 -0.003712 -0.001997 -0.000164
+Full_meals_eaten   -0.000605 -0.010955  0.018477  0.037434 -0.106494 -0.301496  0.563145 -0.175228  0.062767  0.288004  0.194140  0.642606  0.068887 -0.056377  0.046476 -0.012604  0.001026  0.013775 -0.010183  0.000741 -0.001418
+VitD_supp          -0.005119  0.032917  0.009299  0.011085  0.032090  0.381507 -0.295706  0.369393  0.046423  0.525727 -0.406497  0.426100  0.036768  0.016555 -0.029839  0.013810 -0.003400  0.010305 -0.006237 -0.000227 -0.001493
+Initial_days       -0.020595  0.441802  0.069202 -0.070025  0.033070  0.303475 -0.316654 -0.189831  0.006657 -0.135913  0.507464  0.290545 -0.002570  0.006559  0.022660  0.009658  0.012743 -0.002567 -0.003871 -0.019228  0.451148
+TotalCharge        -0.018611  0.697010  0.084004 -0.074522 -0.023282 -0.019779  0.005337  0.001866  0.002931 -0.012797  0.015213 -0.003939 -0.002057  0.000993  0.004130 -0.005412  0.000048 -0.002014  0.021482  0.003065 -0.706619
+Additional_charges  0.004037  0.084523 -0.034177  0.700134  0.001580  0.027856  0.002580 -0.007998 -0.010790 -0.001600  0.007227 -0.021981  0.008570 -0.021768 -0.004953  0.014374 -0.026024  0.050497  0.702158  0.047668  0.026008
+Item1               0.454832 -0.024306  0.294801  0.013935  0.005876 -0.015059 -0.001923  0.008402  0.007423  0.006743 -0.013356 -0.007158 -0.099132  0.012600  0.070804 -0.010194  0.082643  0.187323  0.048091 -0.803378 -0.004234
+Item2               0.428583 -0.024442  0.291427  0.015611  0.015228  0.014530 -0.008939 -0.004192  0.009728 -0.004973  0.001365 -0.001514 -0.149810  0.008846  0.130426 -0.060941  0.096175  0.623413 -0.074456  0.532154 -0.003265
+Item3               0.395326 -0.024285  0.294265  0.013716 -0.014178 -0.011102 -0.019854  0.003675  0.008604  0.025933 -0.000682  0.011085 -0.213440  0.044207  0.200800 -0.240776 -0.426604 -0.623468  0.028412  0.193360  0.006448
+Item4               0.151867  0.062619 -0.553289 -0.032931  0.012710  0.010733 -0.007518 -0.040617  0.027542  0.027407 -0.039005  0.030149 -0.369368  0.034056  0.352040 -0.389118  0.483704 -0.105966  0.040617 -0.009615  0.000881
+Item5              -0.189734 -0.070607  0.578681  0.030881  0.009703 -0.012875 -0.000647  0.014825  0.001309  0.004040 -0.007530 -0.022911  0.123128  0.021908 -0.059832 -0.132326  0.696690 -0.297509  0.049082  0.095217  0.003998
+Item6               0.410193  0.030964 -0.160776 -0.018149 -0.009099  0.005179  0.026635 -0.005065 -0.017499  0.001395  0.001306  0.011220 -0.046347 -0.025258 -0.054537  0.795705  0.270381 -0.274441  0.008291  0.126180 -0.001963
+Item7               0.356476  0.037418 -0.169964 -0.002162 -0.003387  0.006811  0.013415 -0.025408 -0.007210 -0.020074  0.018579  0.028952  0.060598 -0.149939 -0.831775 -0.332393  0.071399 -0.061487 -0.013707  0.050270  0.005349
+Item8               0.312459  0.029290 -0.165233 -0.018050  0.004729 -0.010501 -0.032698  0.048494 -0.004647 -0.003303  0.036641 -0.065645  0.861339  0.150841  0.269917 -0.151795  0.039871 -0.036736  0.004049  0.033337  0.004956
+2022-09-16 00:38:15,131 [INFO] ***** Run Complete *****
